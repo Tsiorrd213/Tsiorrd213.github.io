@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AICA | AI Career Accelerator</title>
+    <meta name="description" content="Learn how to use AI strategically to land your dream career. Bypass ATS filters, craft authentic stories, and accelerate your job search.">
+    
+    <!-- Google Fonts: Outfit (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Premium Loader -->
+    <div id="loader" class="loader-overlay">
+        <div class="loader-content">
+            <div class="loader-logo-wrapper">
+                <img src="assets/logo.png" alt="AICA Logo" class="loader-logo-img">
+            </div>
+            <div class="loader-bar-bg">
+                <div class="loader-bar"></div>
+            </div>
+            <span class="loader-text font-inter">Accelerating Opportunities...</span>
+        </div>
+    </div>
+
+    <!-- Floating Background Circuit Traces -->
+    <div class="circuit-traces-container">
+        <!-- Top Left Traces -->
+        <svg class="circuit-svg svg-top-left" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M -50,150 L 180,150 L 280,250 L 450,250 L 530,170 L 680,170" stroke="rgba(56, 90, 110, 0.08)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M -50,180 L 150,180 L 250,280 L 500,280 L 560,220 L 750,220" stroke="rgba(217, 148, 59, 0.12)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="8 6"/>
+            <path d="M 180,150 L 210,120 L 350,120" stroke="rgba(56, 90, 110, 0.06)" stroke-width="1"/>
+            <circle cx="180" cy="150" r="3.5" fill="#385A6E" opacity="0.4"/>
+            <circle cx="280" cy="250" r="3.5" fill="#D9943B" opacity="0.5"/>
+            <circle cx="530" cy="170" r="3.5" fill="#385A6E" opacity="0.4"/>
+        </svg>
+        
+        <!-- Bottom Right Traces -->
+        <svg class="circuit-svg svg-bottom-right" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 850,450 L 620,450 L 520,350 L 350,350 L 270,430 L 100,430" stroke="rgba(56, 90, 110, 0.08)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M 850,420 L 650,420 L 550,320 L 300,320 L 240,380 L 50,380" stroke="rgba(217, 148, 59, 0.12)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="8 6"/>
+            <circle cx="620" cy="450" r="3.5" fill="#385A6E" opacity="0.4"/>
+            <circle cx="520" cy="350" r="3.5" fill="#D9943B" opacity="0.5"/>
+        </svg>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo-group">
+                <img src="assets/logo.png" alt="AICA Logo" class="logo-img">
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="#about" class="nav-link font-inter">About</a>
+                <a href="#why-aica" class="nav-link font-inter">Why AICA</a>
+                <a href="#framework" class="nav-link font-inter">Playbook</a>
+                <a href="#podcast" class="nav-link font-inter">Podcast</a>
+                <a href="#patreon" class="nav-link font-inter">Patreon</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://www.patreon.com/cw/AICareerAccelerator" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm font-inter">Join Patreon</a>
+            </div>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav">
+        <a href="#about" class="mobile-nav-link font-inter">About</a>
+        <a href="#why-aica" class="mobile-nav-link font-inter">Why AICA</a>
+        <a href="#framework" class="mobile-nav-link font-inter">Playbook</a>
+        <a href="#podcast" class="mobile-nav-link font-inter">Podcast</a>
+        <a href="#patreon" class="mobile-nav-link font-inter">Patreon</a>
+        <a href="https://www.patreon.com/cw/AICareerAccelerator" target="_blank" rel="noopener noreferrer" class="btn btn-primary font-inter w-full text-center mt-6">Join Patreon</a>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="section-container hero-container text-center">
+                <!-- Grid Alignment Crosses -->
+                <div class="grid-cross deco-top-left"></div>
+                <div class="grid-cross deco-top-right"></div>
+                
+                <div class="badge-container fade-in-up">
+                    <span class="badge font-inter">
+                        <span class="badge-dot"></span>
+                        AI Career Accelerator
+                    </span>
+                </div>
+                
+                <h1 class="hero-title font-outfit fade-in-up delay-1">
+                    Learn How to Use AI to Get Hired — <span class="gradient-text">Not Replaced.</span>
+                </h1>
+                
+                <p class="hero-subtitle font-inter fade-in-up delay-2">
+                    AICA teaches college students and recent graduates how to use AI strategically throughout the job search—from finding hidden opportunities to networking, interviewing, and telling compelling career stories.
+                </p>
+                
+                <div class="hero-ctas fade-in-up delay-3">
+                    <a href="https://open.spotify.com/episode/4lAG5ptfvvHa5cZHQba9I4?si=n8jb_DZ2REyTPPYzuefLSA" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg font-inter">
+                        <i data-lucide="podcast" class="btn-icon"></i>
+                        Listen to the Podcast
+                    </a>
+                    <a href="https://www.patreon.com/cw/AICareerAccelerator" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg font-inter">
+                        <i data-lucide="lock" class="btn-icon"></i>
+                        Join Patreon
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sleek background grid overlay -->
+            <div class="grid-overlay"></div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section scroll-trigger" id="about">
+            <div class="section-container">
+                <!-- Grid Alignment Crosses -->
+                <div class="grid-cross deco-top-left"></div>
+                <div class="grid-cross deco-top-right"></div>
+                
+                <div class="section-header text-center">
+                    <span class="section-tag font-inter">Our Philosophy</span>
+                    <h2 class="section-title font-outfit">Ditch the Boilerplate.</h2>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-content">
+                        <p class="about-lead font-inter">
+                            Use AI as a strategic career partner—not a resume generator.
+                        </p>
+                        <p class="about-text font-inter">
+                            We get it. Mass-applying with ChatGPT cover letters feels easy, but it backfires. It breaks ATS formatting, alerts recruiters, and erases your voice. AICA teaches you how to use AI as a career copilot to highlight your real strengths, write outreach that people actually reply to, and land interviews.
+                        </p>
+                        
+                        <div class="focus-list">
+                            <div class="focus-item">
+                                <div class="focus-bullet"><i data-lucide="check"></i></div>
+                                <span class="font-inter">Human-first workflows (keep it real, not robotic)</span>
+                            </div>
+                            <div class="focus-item">
+                                <div class="focus-bullet"><i data-lucide="check"></i></div>
+                                <span class="font-inter">Bypass the ATS black hole and get seen by actual humans</span>
+                            </div>
+                            <div class="focus-item">
+                                <div class="focus-bullet"><i data-lucide="check"></i></div>
+                                <span class="font-inter">Real recruiter tea (what actually gets attention)</span>
+                            </div>
+                            <div class="focus-item">
+                                <div class="focus-bullet"><i data-lucide="check"></i></div>
+                                <span class="font-inter">Authentic storytelling to own your background</span>
+                            </div>
+                            <div class="focus-item">
+                                <div class="focus-bullet"><i data-lucide="check"></i></div>
+                                <span class="font-inter">Zero-fluff playbooks and step-by-step guides</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-visual">
+                        <div class="visual-card-wrapper">
+                            <!-- Premium brand visuals -->
+                            <div class="tactile-visual-card">
+                                <img src="assets/logo.png" alt="AICA Brand Logo" class="brand-visual-logo-img">
+                                <div class="brand-visual-tagline font-outfit">AI CAREER ACCELERATOR</div>
+                                <div class="brand-visual-sub font-inter">Student Playbook v2.2</div>
+                            </div>
+                            <!-- Floating abstract tags -->
+                            <div class="floating-badge badge-top-right font-inter"><i data-lucide="zap"></i> Fast Track</div>
+                            <div class="floating-badge badge-bottom-left font-inter"><i data-lucide="shield-check"></i> ATS Verified</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why AICA Section (Feature Cards) -->
+        <section class="features-section scroll-trigger" id="why-aica">
+            <div class="section-container">
+                <!-- Grid Alignment Crosses -->
+                <div class="grid-cross deco-top-left"></div>
+                <div class="grid-cross deco-top-right"></div>
+                
+                <div class="section-header text-center">
+                    <span class="section-tag font-inter">Why AICA</span>
+                    <h2 class="section-title font-outfit">Built to Give You the Edge</h2>
+                    <p class="section-desc font-inter">Ditch traditional, outdated advice. Gain modern tools and strategies tailored for the current job market.</p>
+                </div>
+                
+                <div class="features-grid">
+                    <!-- Feature Card 1 -->
+                    <div class="feature-card tactile-card">
+                        <div class="feature-icon-wrapper">
+                            <i data-lucide="cpu" class="feature-icon"></i>
+                        </div>
+                        <h3 class="feature-card-title font-outfit">Smart Career Strategy</h3>
+                        <p class="feature-card-text font-inter">Stop mass-applying to dead-end jobs. Learn practical AI workflows that help you hunt down stealth roles and stand out.</p>
+                    </div>
+                    
+                    <!-- Feature Card 2 -->
+                    <div class="feature-card tactile-card">
+                        <div class="feature-icon-wrapper">
+                            <i data-lucide="file-text" class="feature-icon"></i>
+                        </div>
+                        <h3 class="feature-card-title font-outfit">Resumes That Sound Human</h3>
+                        <p class="feature-card-text font-inter">Beat automated Applicant Tracking Systems without losing your personal voice or looking like a generic template.</p>
+                    </div>
+                    
+                    <!-- Feature Card 3 -->
+                    <div class="feature-card tactile-card">
+                        <div class="feature-icon-wrapper">
+                            <i data-lucide="eye" class="feature-icon"></i>
+                        </div>
+                        <h3 class="feature-card-title font-outfit">Inside the Recruiter's Mind</h3>
+                        <p class="feature-card-text font-inter">Get the raw truth on what recruiters look for, straight from industry pros who hire daily.</p>
+                    </div>
+                    
+                    <!-- Feature Card 4 -->
+                    <div class="feature-card tactile-card">
+                        <div class="feature-icon-wrapper">
+                            <i data-lucide="headphones" class="feature-icon"></i>
+                        </div>
+                        <h3 class="feature-card-title font-outfit">Ditch the Screen Fatigue</h3>
+                        <p class="feature-card-text font-inter">Easy-to-digest weekly podcast episodes you can listen to while commuting, working out, or chilling.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Framework (Methodology) -->
+        <section class="framework-section scroll-trigger" id="framework">
+            <div class="section-container">
+                <!-- Grid Alignment Crosses -->
+                <div class="grid-cross deco-top-left"></div>
+                <div class="grid-cross deco-top-right"></div>
+                
+                <div class="section-header text-center">
+                    <span class="section-tag font-inter">The Game Plan</span>
+                    <h2 class="section-title font-outfit">The AICA Playbook</h2>
+                    <p class="section-desc font-inter">A step-by-step career accelerator built to take you from generic applicant to hired professional.</p>
+                </div>
+                
+                <!-- Interactive Methodology Cards -->
+                <div class="framework-layout">
+                    <!-- Left side: The timeline indicators (interactive click/hover targets) -->
+                    <div class="framework-steps-nav">
+                        <div class="framework-step-tab active" data-step="1">
+                            <span class="step-num font-outfit">01</span>
+                            <span class="step-label font-inter">Spot the Signals</span>
+                        </div>
+                        <div class="framework-step-tab" data-step="2">
+                            <span class="step-num font-outfit">02</span>
+                            <span class="step-label font-inter">Make Contact</span>
+                        </div>
+                        <div class="framework-step-tab" data-step="3">
+                            <span class="step-num font-outfit">03</span>
+                            <span class="step-label font-inter">Show, Don't Tell</span>
+                        </div>
+                        <div class="framework-step-tab" data-step="4">
+                            <span class="step-num font-outfit">04</span>
+                            <span class="step-label font-inter">Ace the Interview</span>
+                        </div>
+                        <div class="framework-step-tab" data-step="5">
+                            <span class="step-num font-outfit">05</span>
+                            <span class="step-label font-inter">Tell Your Story</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Right side: The active panel with detailed descriptions -->
+                    <div class="framework-display-panel tactile-card">
+                        <div class="panel-glow"></div>
+                        <div class="framework-content-block active" id="step-desc-1">
+                            <div class="framework-header">
+                                <span class="framework-step-badge font-inter">Phase 01</span>
+                                <h3 class="framework-card-title font-outfit">Spot the Signals</h3>
+                            </div>
+                            <p class="framework-card-text font-inter">
+                                Find high-value opportunities before they ever hit job boards. Learn to map stealth hiring initiatives and use AI to trace unadvertised expansions and project teams.
+                            </p>
+                            <div class="framework-perk-box">
+                                <span class="perk-title font-inter">Key Outcomes:</span>
+                                <ul class="perk-list font-inter">
+                                    <li><i data-lucide="check-circle-2"></i> Mapping stealth job openings</li>
+                                    <li><i data-lucide="check-circle-2"></i> Smart AI search string hacks</li>
+                                    <li><i data-lucide="check-circle-2"></i> Spotting stealth hiring triggers</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="framework-content-block" id="step-desc-2">
+                            <div class="framework-header">
+                                <span class="framework-step-badge font-inter">Phase 02</span>
+                                <h3 class="framework-card-title font-outfit">Make Contact</h3>
+                            </div>
+                            <p class="framework-card-text font-inter">
+                                Skip the application portals and connect directly with hiring managers. Learn to write highly personalized, AI-assisted outreach messages that get replies.
+                            </p>
+                            <div class="framework-perk-box">
+                                <span class="perk-title font-inter">Key Outcomes:</span>
+                                <ul class="perk-list font-inter">
+                                    <li><i data-lucide="check-circle-2"></i> Finding direct recruiter emails</li>
+                                    <li><i data-lucide="check-circle-2"></i> Hyper-customized DM outreach</li>
+                                    <li><i data-lucide="check-circle-2"></i> High-conversion networking flow</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="framework-content-block" id="step-desc-3">
+                            <div class="framework-header">
+                                <span class="framework-step-badge font-inter">Phase 03</span>
+                                <h3 class="framework-card-title font-outfit">Show, Don't Tell</h3>
+                            </div>
+                            <p class="framework-card-text font-inter">
+                                Don't just say you can do the work—prove it. Build quick, AI-boosted micro-projects and case studies that demonstrate immediate value before they even call you.
+                            </p>
+                            <div class="framework-perk-box">
+                                <span class="perk-title font-inter">Key Outcomes:</span>
+                                <ul class="perk-list font-inter">
+                                    <li><i data-lucide="check-circle-2"></i> Rapid prototype generation</li>
+                                    <li><i data-lucide="check-circle-2"></i> Company-specific value decks</li>
+                                    <li><i data-lucide="check-circle-2"></i> AI-enhanced project showreels</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="framework-content-block" id="step-desc-4">
+                            <div class="framework-header">
+                                <span class="framework-step-badge font-inter">Phase 04</span>
+                                <h3 class="framework-card-title font-outfit">Ace the Interview</h3>
+                            </div>
+                            <p class="framework-card-text font-inter">
+                                Train custom AI interview bots to mock-interview you, drilling you on tough team-specific questions and polishing your answers on the fly.
+                            </p>
+                            <div class="framework-perk-box">
+                                <span class="perk-title font-inter">Key Outcomes:</span>
+                                <ul class="perk-list font-inter">
+                                    <li><i data-lucide="check-circle-2"></i> Personalized mock simulators</li>
+                                    <li><i data-lucide="check-circle-2"></i> Dynamic storytelling loops</li>
+                                    <li><i data-lucide="check-circle-2"></i> Real-time communication audits</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="framework-content-block" id="step-desc-5">
+                            <div class="framework-header">
+                                <span class="framework-step-badge font-inter">Phase 05</span>
+                                <h3 class="framework-card-title font-outfit">Tell Your Story</h3>
+                            </div>
+                            <p class="framework-card-text font-inter">
+                                Shape the narrative of your career. Weave your background, skills, and projects into a personal pitch that recruiters won't forget.
+                            </p>
+                            <div class="framework-perk-box">
+                                <span class="perk-title font-inter">Key Outcomes:</span>
+                                <ul class="perk-list font-inter">
+                                    <li><i data-lucide="check-circle-2"></i> Authentic, high-impact storytelling</li>
+                                    <li><i data-lucide="check-circle-2"></i> Structured personal branding</li>
+                                    <li><i data-lucide="check-circle-2"></i> Pitch optimization with AI coaches</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Podcast Section -->
+        <section class="podcast-section scroll-trigger" id="podcast">
+            <div class="section-container">
+                <!-- Grid Alignment Crosses -->
+                <div class="grid-cross deco-top-left"></div>
+                <div class="grid-cross deco-top-right"></div>
+                
+                <div class="podcast-premium-card tactile-card">
+                    <div class="podcast-grid">
+                        <div class="podcast-artwork-wrapper">
+                            <!-- Premium Artwork -->
+                            <img src="assets/aica_podcast_cover.png" alt="AICA Podcast Artwork" class="podcast-artwork">
+                            
+                            <!-- Interactive Audio Visualizer on Cover -->
+                            <div class="mini-visualizer">
+                                <span class="bar bar-1"></span>
+                                <span class="bar bar-2"></span>
+                                <span class="bar bar-3"></span>
+                                <span class="bar bar-4"></span>
+                                <span class="bar bar-5"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="podcast-info">
+                            <div class="podcast-tag-group">
+                                <span class="podcast-badge font-inter">
+                                    <i data-lucide="microphone" class="badge-icon"></i>
+                                    Weekly Episodes
+                                </span>
+                                <span class="duration-badge font-inter">15-20 Min</span>
+                            </div>
+                            
+                            <h2 class="podcast-title font-outfit">Weekly Podcast</h2>
+                            <p class="podcast-desc font-inter">
+                                Short, snackable episodes packed with real, fluff-free AI career strategies. Perfect for multitasking on your commute, at the gym, or between classes.
+                            </p>
+                            
+                            <div class="podcast-ctas">
+                                <a href="https://open.spotify.com/episode/4lAG5ptfvvHa5cZHQba9I4?si=n8jb_DZ2REyTPPYzuefLSA" target="_blank" rel="noopener noreferrer" class="btn btn-spotify font-inter">
+                                    <i data-lucide="play" class="btn-icon"></i>
+                                    Listen Now
+                                </a>
+                            </div>
+
+                            <div class="platform-list">
+                                <span class="platform-label font-inter">Available on:</span>
+                                <div class="platform-icons">
+                                    <!-- Spotify Icon -->
+                                    <a href="https://open.spotify.com/episode/4lAG5ptfvvHa5cZHQba9I4?si=n8jb_DZ2REyTPPYzuefLSA" target="_blank" rel="noopener noreferrer" class="platform-link" title="Spotify">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="p-icon">
+                                            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424c-.18.295-.565.387-.86.207-2.377-1.454-5.37-1.783-8.892-.982-.336.075-.668-.135-.744-.47-.077-.336.135-.668.47-.743 3.856-.88 7.15-.502 9.822 1.132.296.18.387.563.204.856zm1.224-2.722c-.226.367-.707.487-1.074.26-2.717-1.67-6.86-2.152-10.065-1.18-.413.125-.847-.107-.972-.52-.125-.413.108-.847.52-.972 3.666-1.112 8.225-.572 11.33 1.34.368.228.487.708.26 1.072zm.105-2.833C14.384 8.71 8.56 8.518 5.176 9.544c-.52.158-1.07-.143-1.228-.662-.158-.52.143-1.07.662-1.228 3.882-1.178 10.315-.957 14.38 1.457.47.28.623.89.344 1.36-.28.47-.89.622-1.36.343z"/>
+                                        </svg>
+                                    </a>
+                                    <!-- Apple Podcasts -->
+                                    <a href="https://podcasts.apple.com" target="_blank" rel="noopener noreferrer" class="platform-link" title="Apple Podcasts">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="p-icon">
+                                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                            <circle cx="12" cy="12" r="3"/>
+                                            <path d="M12 9a3 3 0 0 1 0 6"/>
+                                        </svg>
+                                    </a>
+                                    <!-- Youtube -->
+                                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="platform-link" title="YouTube">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="p-icon">
+                                            <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.508a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11C4.483 20.455 12 20.455 12 20.455s7.517 0 9.388-.508a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Patreon Section -->
+        <section class="patreon-section scroll-trigger" id="patreon">
+            <div class="section-container">
+                <!-- Grid Alignment Crosses -->
+                <div class="grid-cross deco-top-left"></div>
+                <div class="grid-cross deco-top-right"></div>
+                
+                <div class="section-header text-center">
+                    <span class="section-tag font-inter">Patreon Vault</span>
+                    <h2 class="section-title font-outfit">Unlock the Vault</h2>
+                    <p class="section-desc font-inter">Get access to the exact prompts, resume reviews, templates, and community to accelerate your job search.</p>
+                </div>
+                
+                <div class="pricing-grid">
+                    <!-- Starter Vault -->
+                    <div class="pricing-card tactile-card">
+                        <div class="pricing-header">
+                            <span class="tier-badge font-inter">Starter Vault</span>
+                            <div class="price-container">
+                                <span class="currency font-outfit">$</span>
+                                <span class="price font-outfit">4.99</span>
+                                <span class="period font-inter">/mo</span>
+                            </div>
+                            <p class="tier-desc font-inter">Essential tactical resources to upgrade your application quality.</p>
+                        </div>
+                        
+                        <div class="pricing-features">
+                            <div class="p-feature-item">
+                                <i data-lucide="check" class="check-icon"></i>
+                                <span class="font-inter">Custom AI prompt libraries</span>
+                            </div>
+                            <div class="p-feature-item">
+                                <i data-lucide="check" class="check-icon"></i>
+                                <span class="font-inter">ATS-friendly resume templates</span>
+                            </div>
+                            <div class="p-feature-item">
+                                <i data-lucide="check" class="check-icon"></i>
+                                <span class="font-inter">Weekly career resource drops</span>
+                            </div>
+                            <div class="p-feature-item">
+                                <i data-lucide="check" class="check-icon"></i>
+                                <span class="font-inter">Access to community channels</span>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-action">
+                            <a href="https://www.patreon.com/checkout/AICareerAccelerator?rid=29005578&vanity=16345743" target="_blank" rel="noopener noreferrer" class="btn btn-secondary w-full text-center font-inter">Become a Member</a>
+                        </div>
+                    </div>
+
+                    <!-- Professional Lab (Most Popular) -->
+                    <div class="pricing-card tactile-card premium-card">
+                        <div class="card-glow-edge"></div>
+                        <div class="pricing-header">
+                            <div class="tier-tag-wrapper">
+                                <span class="tier-badge font-inter">Professional Lab</span>
+                                <span class="pop-tag font-inter">Recommended</span>
+                            </div>
+                            <div class="price-container">
+                                <span class="currency font-outfit">$</span>
+                                <span class="price font-outfit">9.99</span>
+                                <span class="period font-inter">/mo</span>
+                            </div>
+                            <p class="tier-desc font-inter">Direct personalized feedback and coaching to lock down offers.</p>
+                        </div>
+                        
+                        <div class="pricing-features">
+                            <div class="p-feature-item">
+                                <i data-lucide="check" class="check-icon"></i>
+                                <span class="font-inter font-semibold">Everything in Starter Vault</span>
+                            </div>
+                            <div class="p-feature-item">
+                                <i data-lucide="check" class="check-icon"></i>
+                                <span class="font-inter">Professional resume reviews</span>
+                            </div>
+                            <div class="p-feature-item">
+                                <i data-lucide="check" class="check-icon"></i>
+                                <span class="font-inter font-semibold">Portfolio & case study feedback</span>
+                            </div>
+                            <div class="p-feature-item">
+                                <i data-lucide="check" class="check-icon"></i>
+                                <span class="font-inter">Outreach message critiques</span>
+                            </div>
+                            <div class="p-feature-item">
+                                <i data-lucide="check" class="check-icon"></i>
+                                <span class="font-inter">Monthly live coaching sessions</span>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-action">
+                            <a href="https://www.patreon.com/checkout/AICareerAccelerator?rid=29005584&vanity=16345743" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full text-center font-inter">Become a Member</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta-section scroll-trigger">
+            <div class="section-container text-center">
+                <!-- Grid Alignment Crosses -->
+                <div class="grid-cross deco-top-left"></div>
+                <div class="grid-cross deco-top-right"></div>
+                
+                <div class="glow-bg"></div>
+                <h2 class="final-cta-title font-outfit">Start Building Your AI Career Today.</h2>
+                <div class="final-cta-buttons">
+                    <a href="https://open.spotify.com/episode/4lAG5ptfvvHa5cZHQba9I4?si=n8jb_DZ2REyTPPYzuefLSA" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg font-inter">
+                        <i data-lucide="play" class="btn-icon"></i>
+                        Listen on Spotify
+                    </a>
+                    <a href="https://www.patreon.com/cw/AICareerAccelerator" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg font-inter">
+                        <i data-lucide="lock" class="btn-icon"></i>
+                        Join Patreon
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo-group">
+                    <img src="assets/logo.png" alt="AICA Logo" class="logo-img">
+                </a>
+                <p class="footer-tagline font-inter">Empowering human capability with strategic AI accelerator loops.</p>
+            </div>
+            
+            <div class="footer-nav">
+                <span class="footer-nav-title font-outfit">Navigation</span>
+                <a href="#about" class="footer-nav-link font-inter">About</a>
+                <a href="#podcast" class="footer-nav-link font-inter">Podcast</a>
+                <a href="#patreon" class="footer-nav-link font-inter">Patreon</a>
+                <a href="mailto:team@aica.academy" class="footer-nav-link font-inter">Contact</a>
+            </div>
+
+            <div class="footer-socials">
+                <span class="footer-nav-title font-outfit">Follow Us</span>
+                <div class="footer-social-links">
+                    <a href="https://open.spotify.com/episode/4lAG5ptfvvHa5cZHQba9I4?si=n8jb_DZ2REyTPPYzuefLSA" target="_blank" rel="noopener noreferrer" class="social-link" title="Spotify">
+                        <i data-lucide="music-4"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" title="YouTube">
+                        <i data-lucide="youtube"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom text-center">
+            <p class="copyright font-inter">&copy; 2026 AICA. All rights reserved. Built for DSM 596 Capstone.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
