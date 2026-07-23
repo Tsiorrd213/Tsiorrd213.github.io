@@ -1493,14 +1493,59 @@ a {
         grid-template-columns: 1fr;
         gap: 32px;
         text-align: center;
+        justify-items: center;
+        min-width: 0;
+        width: 100%;
+    }
+
+    .podcast-premium-card {
+        padding: clamp(20px, 6vw, 32px);
     }
     
     .podcast-artwork-wrapper {
+        width: 100%;
+        max-width: 320px;
+        min-width: 0;
+        height: auto;
+        aspect-ratio: 1 / 1;
         margin: 0 auto;
+    }
+
+    .podcast-info {
+        align-items: center;
+        min-width: 0;
+        width: 100%;
+        text-align: center;
     }
     
     .podcast-tag-group {
         justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .podcast-title,
+    .podcast-desc,
+    .podcast-ctas,
+    .platform-list {
+        width: 100%;
+    }
+
+    .podcast-title {
+        font-size: clamp(1.55rem, 6.8vw, 2.1rem);
+    }
+
+    .podcast-ctas,
+    .platform-list {
+        justify-content: center;
+    }
+
+    .podcast-ctas {
+        display: flex;
+    }
+
+    .platform-list {
+        flex-wrap: wrap;
     }
     
     .pricing-grid {
