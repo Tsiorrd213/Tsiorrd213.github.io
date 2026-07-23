@@ -105,6 +105,10 @@
         if (url.origin !== window.location.origin) {
             const destination = destinationFor(url);
             setTag('last_outbound_destination', destination);
+            if (destination === 'spotify' &&
+                typeof window.gtag_report_conversion === 'function') {
+                window.gtag_report_conversion();
+            }
             trackEvent(destination + '_click');
             trackEvent('outbound_click');
         }
