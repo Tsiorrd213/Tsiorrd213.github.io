@@ -45,14 +45,19 @@
     };
 
     const query = new URLSearchParams(window.location.search);
+    const hasGoogleClickId = ['gclid', 'gbraid', 'wbraid']
+        .some((parameter) => query.has(parameter));
     const campaignTags = {
-        traffic_source: query.get('utm_source') || 'direct',
-        traffic_medium: query.get('utm_medium') || 'none',
+        traffic_source: query.get('utm_source') || (hasGoogleClickId ? 'google_ads' : 'direct'),
+        traffic_medium: query.get('utm_medium') || (hasGoogleClickId ? 'paid' : 'none'),
         traffic_campaign: query.get('utm_campaign') || 'none',
         traffic_content: query.get('utm_content') || 'none'
     };
 
     Object.entries(campaignTags).forEach(([key, value]) => setTag(key, value));
+    if (hasGoogleClickId) {
+        setTag('google_click_id_present', 'yes');
+    }
     setTag('landing_page', window.location.pathname || '/');
     trackEvent('landing_page_view');
 
